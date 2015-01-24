@@ -132,4 +132,4 @@ class SroLso
   
 end
 
-SroLso.new.perform
+# SroLso.new.perform
