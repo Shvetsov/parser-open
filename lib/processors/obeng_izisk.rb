@@ -106,7 +106,6 @@ class ObengIzisk
   def resolution_date
     # ???
     slice = Capybara.all(:xpath, '//table[@class="stripy"]/thead/tr/th[contains(text(),"номер свидетельства")]/ancestor::table/tbody/tr[last()]/td[2]').first
-    puts slice.text
     slice ? slice.text : "-"
   end
 
@@ -117,7 +116,6 @@ class ObengIzisk
 
   def certificate_number
     slice = Capybara.all(:xpath, '//table[@class="stripy"]/thead/tr/th[contains(text(),"номер свидетельства")]/ancestor::table/tbody/tr[last()]/td[1]').first
-    puts slice.text
     slice ? slice.text : "-"
   end
 
